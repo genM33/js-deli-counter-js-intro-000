@@ -36,7 +36,7 @@ console.log(currentLine(testArray));
 */
 
 function newPokemonArray(line) {
-  for (let i = 0; i < line.length; i++) {  
+  for (let i = 0; i < line.length; i++) {
     line[i] = `${line.indexOf(line[i])+1}. ${line[i]}`;
   };
   return line;
