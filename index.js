@@ -8,7 +8,6 @@ function takeANumber(line, name) {
 let pokemon = ['Cyndaquil', 'Bulbasaur', 'Charmander', 'Squirtle'];
 
 // let pokemon = [];
-// ashKetchum = [];
 
 function nowServing(line) {
   if (line[0] === undefined) {
@@ -21,21 +20,7 @@ function nowServing(line) {
 // console.log(nowServing(pokemon));
 // console.log(pokemon);
 
-function newPokemonArray(line) {
-  for (let i = 0; i < line.length; i++) {
-/* var testArray = ['Cat', 'Dog'];
-
-function currentLine(line) {
-  line.forEach(arrayFunction);
-  function arrayFunction(item, index) {
-    return `${index}. ${item}`;
-  };
-};
-
-console.log(currentLine(testArray));
-*/
-
-function newPokemonArray(line) {
+function customerLine(line) {
   for (let i = 0; i < line.length; i++) {
     line[i] = `${line.indexOf(line[i])+1}. ${line[i]}`;
   };
@@ -46,8 +31,7 @@ function currentLine(line) {
   if (line[0] === undefined) {
     return "The line is currently empty.";
   } else {
-      return `The line is currently: ${newPokemonArray(line).join(', ')}`;
-      // return `The line is currently: ${line.join(', ')}`;
+    return `The line is currently: ${customerLine(line).join(', ')}`;
   };
 };
 
