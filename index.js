@@ -5,8 +5,7 @@ function takeANumber(line, name) {
 
 // console.log(takeANumber(['John', 'Montrezl'], 'Billy'))
 
-let pokemon = ['Cyndaquil', 'Bulbasaur', 'Charmander', 'Squirtle'];
-
+// let pokemon = ['Cyndaquil', 'Bulbasaur', 'Charmander', 'Squirtle'];
 // let pokemon = [];
 
 function nowServing(line) {
@@ -35,4 +34,4 @@ function currentLine(line) {
   };
 };
 
-console.log(currentLine(pokemon));
+// console.log(currentLine(pokemon));
